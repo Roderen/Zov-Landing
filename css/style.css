@@ -147,6 +147,7 @@ header {
 .burger__btn {
   width: 24px;
   height: 20px;
+  display: none;
 }
 
 .burger__btn div {
@@ -1014,7 +1015,7 @@ body.active .burger__btn div:nth-child(3) {
     display: none;
   }
 
-  .burger__button {
+  .burger__btn {
     display: block;
   }
 
