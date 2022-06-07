@@ -1,0 +1,38 @@
+.overlay {
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% + 100vh);
+    z-index: 10;
+  
+    -webkit-animation-name: slideUpOverlay;
+    animation-name: slideUpOverlay;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  @-webkit-keyframes slideUpOverlay {
+    0% {
+      height: calc(100% + 100vh);
+    }
+  
+    100% {
+      height: calc(100% + 0vh);
+    }
+  }
+  
+  @keyframes slideUpOverlay {
+    from {
+      height: calc(100% + 100vh);
+    }
+  
+    to {
+      height: calc(100% + 0vh);
+    }
+  }
