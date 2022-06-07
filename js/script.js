@@ -1,4 +1,19 @@
-const tabs = document.querySelectorAll('.services__accordion-title') // Берём заголовки-кнопки всех итемов
+const burgerBtn = document.querySelector('.burger__btn');
+const burgerActive = document.querySelector('.burger__menu');
+const body = document.querySelector('body');
+
+burgerBtn.addEventListener('click', () => {
+    body.classList.toggle('active');
+    burgerActive.classList.toggle('burger__menu-active')
+})
+
+
+
+
+
+
+const tabs = document.querySelectorAll('.services__accordion-title');
+const screenWidth = window.screen.width;
 
 tabs.forEach(tabs => {
     tabs.addEventListener('click', (e) => {
@@ -7,16 +22,20 @@ tabs.forEach(tabs => {
             removeAccordionActive.classList.toggle('active');
             removeAccordionActive.nextElementSibling.style.maxHeight = 0;
             removeAccordionActive.nextElementSibling.style.paddingBottom = 0;
-        } // Чтобы можно было открывать только один итем, остальные закрываются
+        }
         
         tabs.classList.toggle('active');
-        const accordionItemContent = tabs.nextElementSibling; // Так как в DOM после заголовка-кнопки сразу идёт блок с контентом, то "nextElementSibling" берёт его так как он следующий 
+        const accordionItemContent = tabs.nextElementSibling;
         if (tabs.classList.contains('active')) {
             accordionItemContent.style.maxHeight = accordionItemContent.scrollHeight + "px";
-            accordionItemContent.style.paddingBottom = "44px"; // Анимация раскрытия (НЕ БУДЕТ РАБОТАТЬ БЕЗ transition В css)
+            if (screenWidth > 360) {
+                accordionItemContent.style.paddingBottom = "44px";
+            } else {
+                accordionItemContent.style.paddingBottom = "0px";
+            }
         } else {
             accordionItemContent.style.maxHeight = 0;
             accordionItemContent.style.paddingBottom = "0px";
-        } // Стандартный скрипт открытия/закрытия посредством удаления/добавления класса active и смена высоты для анимации
+        }
     })
 })
