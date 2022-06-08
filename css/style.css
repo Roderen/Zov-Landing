@@ -458,6 +458,11 @@ body.active .burger__btn div:nth-child(3) {
   margin-top: 128px;
 }
 
+.services {
+  max-width: 1160px;
+  margin-left: auto;
+}
+
 .services__info {
   margin-bottom: 48px;
   display: -webkit-box;
@@ -510,6 +515,7 @@ body.active .burger__btn div:nth-child(3) {
   justify-content: space-between;
   padding: 44px 0;
   font-family: 'PF Beau Sans Pro Bold';
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* .open-accordion {
