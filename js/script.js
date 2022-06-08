@@ -1,9 +1,11 @@
 const burgerBtn = document.querySelector('.burger__btn');
 const burgerActive = document.querySelector('.burger__menu');
 const body = document.querySelector('body');
+const html = document.querySelector('html');
 
 burgerBtn.addEventListener('click', () => {
     body.classList.toggle('active');
+    html.classList.toggle('active');
     burgerActive.classList.toggle('burger__menu-active')
 })
 
