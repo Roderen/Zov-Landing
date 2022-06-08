@@ -402,7 +402,7 @@ body.active .burger__btn div:nth-child(3) {
 
 .examples-big-img {
   width: 960px;
-  max-height: 538px;
+  height: 538px;
   display: inherit;
 }
 
@@ -425,7 +425,7 @@ body.active .burger__btn div:nth-child(3) {
 
 .examples-small-img {
   width: 480px;
-  max-height: 270px;
+  height: 270px;
   display: inherit;
 }
 
@@ -494,6 +494,7 @@ body.active .burger__btn div:nth-child(3) {
 }
 
 .services__accordion-title {
+  position: relative;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -511,13 +512,73 @@ body.active .burger__btn div:nth-child(3) {
   font-family: 'PF Beau Sans Pro Bold';
 }
 
-.open-accordion {
+/* .open-accordion {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+} */
+
+
+
+
+
+
+.accordion__btn {
+  position: absolute;
+  right: 10px;
   width: 30px;
   height: 30px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
+.accordion__btn:before, .accordion__btn:after {
+  position: absolute;
+  left: 15px;
+  content: '';
+  height: 30px;
+  width: 2px;
+  background-color: #45A5A3;
+}
+
+.accordion__btn:before {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.accordion__btn:after {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.services__accordion-title.active .accordion__btn {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .accordion-title-number {
   font-size: 24px;
@@ -543,15 +604,6 @@ body.active .burger__btn div:nth-child(3) {
 
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.services__accordion-title.active .open-accordion {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -846,9 +898,11 @@ body.active .burger__btn div:nth-child(3) {
 }
 
 .footer__site-link {
+  font-family: 'PF Beau Sans Pro Bold';
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+  margin-top: 8px;
 }
 
 .footer__policy {
@@ -893,10 +947,28 @@ body.active .burger__btn div:nth-child(3) {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .examples-big-img {
+    height: 438px;
+  }
+
+  .examples-small-img {
+    height: 220px;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .intro__title {
     font-size: 140px;
     right: 100px;
+  }
+
+  .examples-big-img {
+    height: 380px;
+  }
+
+  .examples-small-img {
+    height: 200px;
   }
 
   .slick-center {
@@ -1011,6 +1083,14 @@ body.active .burger__btn div:nth-child(3) {
     max-width: 100%;
   }
 
+  .examples-big-img {
+    height: 280px;
+  }
+
+  .examples-small-img {
+    height: 145px;
+  }
+
   .slick-track {
     height: auto;
   }
@@ -1063,6 +1143,14 @@ body.active .burger__btn div:nth-child(3) {
 
 
 @media screen and (max-width: 768px) {
+  .examples-big-img {
+    height: 320px;
+  }
+
+  .examples-small-img {
+    height: 210px;
+  }
+
   .header {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -1166,6 +1254,14 @@ body.active .burger__btn div:nth-child(3) {
 
 
 @media screen and (max-width: 414px) {
+  .examples-big-img {
+    height: 201px;
+  }
+
+  .examples-small-img {
+    height: 101px;
+  }
+
   .intro__title {
     font-size: 80px;
     letter-spacing: 0;
@@ -1196,9 +1292,14 @@ body.active .burger__btn div:nth-child(3) {
     height: 16px;
   }
 
-  .open-accordion svg {
+  .accordion__btn {
     width: 16px;
     height: 16px;
+  }
+
+  .accordion__btn:before, .accordion__btn:after {
+    height: 16px;
+    left: 7px;
   }
 
   .services__info-title {
@@ -1242,7 +1343,7 @@ body.active .burger__btn div:nth-child(3) {
   .accordion-title-text {
     font-size: 23px;
     line-height: 30px;
-    max-width: 280px;
+    max-width: 270px;
   }
 
   .design__info-descr {
@@ -1333,7 +1434,7 @@ body.active .burger__btn div:nth-child(3) {
   }
 
   .services__accordion-title {
-    padding: 14px 0;
+    padding: 7px 30px 7px 0;
   }
 
   .footer__instagram-link {
@@ -1362,6 +1463,10 @@ body.active .burger__btn div:nth-child(3) {
 
 
 @media screen and (max-width: 320px) {
+  .burger__menu-list {
+    gap: 25px;
+  }
+  
   .footer__menu {
     width: 290px;
   }

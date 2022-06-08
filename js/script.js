@@ -33,7 +33,7 @@ tabs.forEach(tabs => {
             if (screenWidth > 360) {
                 accordionItemContent.style.paddingBottom = "44px";
             } else {
-                accordionItemContent.style.paddingBottom = "0px";
+                accordionItemContent.style.paddingBottom = "5px";
             }
         } else {
             accordionItemContent.style.maxHeight = 0;
