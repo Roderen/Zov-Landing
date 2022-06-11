@@ -986,6 +986,7 @@ form:last-child .form__input {
         -ms-transform: translate(95%, 50%) rotate(90deg);
             transform: translate(95%, 50%) rotate(90deg);
   }
+  
 
   .algorithm__list-num:before {
     right: 48%;
