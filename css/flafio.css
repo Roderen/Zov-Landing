@@ -443,6 +443,12 @@ body.active .burger__btn div:nth-child(3) {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .gallery__buttons {
+    margin-top: 48px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .intro__title {
     font-size: 75px;

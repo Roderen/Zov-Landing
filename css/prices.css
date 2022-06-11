@@ -351,21 +351,6 @@ body.active .burger__btn div:nth-child(3) {
   list-style: inside;
 }
 
-.accordion__block-item li {
-  /* position: relative; */
-}
-
-/* .accordion__block-item li:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  width: 4px;
-  height: 4px;
-  background-color: #000;
-  border-radius: 50%;
-} */
-
 .accordion__block-info {
   cursor: pointer;
   display: -webkit-box;
@@ -376,6 +361,7 @@ body.active .burger__btn div:nth-child(3) {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .accordion__block-info svg {
@@ -402,6 +388,11 @@ body.active .burger__btn div:nth-child(3) {
   font-size: 22px;
   line-height: 28px;
   color: #000000;
+}
+
+.accordion__block-price span {
+  font-family: 'PT Sans', serif;
+  margin-left: 5px;  
 }
 
 

@@ -29,7 +29,7 @@ function mainPageAccordion() {
       const accordionItemContent = tabs.nextElementSibling;
       if (tabs.classList.contains('active')) {
         accordionItemContent.style.maxHeight = accordionItemContent.scrollHeight + "px";
-        if (screenWidth > 360) {
+        if (screenWidth > 365) {
           accordionItemContent.style.paddingBottom = "44px";
         } else {
           accordionItemContent.style.paddingBottom = "5px";

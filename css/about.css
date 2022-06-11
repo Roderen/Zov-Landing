@@ -26,6 +26,7 @@ body {
 
 .main {
   position: relative;
+  margin-bottom: 256px;
 }
 
 /* Main page */
@@ -929,7 +930,7 @@ body.active .burger__btn div:nth-child(3) {
   }
 
   .about__descr {
-    margin-top: 32px;
+    margin-top: 20px;
   }
 
   .eko__img-under {
@@ -1066,6 +1067,10 @@ body.active .burger__btn div:nth-child(3) {
 @media screen and (max-width: 360px) {
   .eko__list:nth-child(2):before {
     height: 445px;
+  }
+
+  .main {
+    margin-bottom: 80px;
   }
 }
 

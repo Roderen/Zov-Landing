@@ -289,7 +289,7 @@ body.active .burger__btn div:nth-child(3) {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  grid: repeat(4, 500px) / repeat(12, auto);
+  grid: repeat(4, 430px) / repeat(12, auto);
 }
 
 @media screen and (min-width: 1025px) {
@@ -337,7 +337,7 @@ body.active .burger__btn div:nth-child(3) {
   
   .gallery a:nth-child(8) {
     max-height: 740px;
-    margin-top: 140px;
+    margin-top: 210px;
     grid-row: 3 / 5;
     grid-column: 10 / 13;
   }
