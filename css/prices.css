@@ -391,7 +391,7 @@ body.active .burger__btn div:nth-child(3) {
 }
 
 .accordion__block-price span {
-  font-family: 'PT Sans', serif;
+  font-family: 'Roboto', sans-serif;
   margin-left: 5px;  
 }
 
@@ -441,7 +441,7 @@ body.active .burger__btn div:nth-child(3) {
 }
 
 .algorithm__list-num {
-  padding: 26px 33px;
+  padding: 24px 33px;
   width: 30px;
   margin: 0 auto;
   position: relative;
@@ -457,7 +457,7 @@ body.active .burger__btn div:nth-child(3) {
   content: '';
   position: absolute;
   top: 0%;
-  right: 50%;
+  right: 49%;
   -webkit-transform: translateX(50%);
   -ms-transform: translateX(50%);
   transform: translateX(50%);
@@ -472,10 +472,10 @@ body.active .burger__btn div:nth-child(3) {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(32%, -50%);
-  width: 153px;
+  -webkit-transform: translate(33%, -50%);
+  -ms-transform: translate(33%, -50%);
+  transform: translate(33%, -50%);
+  width: 152px;
   height: 1px;
   background-color: #fff;
 }
@@ -935,10 +935,10 @@ form:last-child .form__input {
     -webkit-transform: translate(100%, 50%) rotate(90deg);
         -ms-transform: translate(100%, 50%) rotate(90deg);
             transform: translate(100%, 50%) rotate(90deg);
-    top: 112px;
+    top: 110px;
     bottom: -29%;
-    left: -40%;
-    width: 55px;
+    left: -30%;
+    width: 50px;
   }
 
   .prices__accordion-block {
@@ -975,6 +975,9 @@ form:last-child .form__input {
             transform: translate(95%, 50%) rotate(90deg);
   }
   
+  .algorithm__list-num {
+    width: 28px;
+  }
 
   .algorithm__list-num:before {
     right: 48%;
