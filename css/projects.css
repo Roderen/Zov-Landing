@@ -62,9 +62,6 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -200,6 +197,12 @@ body {
 @media screen and (max-width: 768px) {
   .projects__bg-title {
     font-size: 90px;
+  }
+
+  .projects-big {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
 
   .projects-small img {

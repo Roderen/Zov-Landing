@@ -1,6 +1,7 @@
 /* Burger start */
 
 .burger__menu {
+  overflow-y: scroll;
   position: absolute;
   top: -1000px;
   left: 0;
@@ -220,6 +221,13 @@ body.active .burger__btn div:nth-child(3) {
 
 .header__nav-link {
   color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__nav-link:hover {
+  color: #e8e8e8;
 }
 
 /* Header end */
@@ -255,6 +263,12 @@ body.active .burger__btn div:nth-child(3) {
 
   .burger__btn {
     display: block;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .burger__menu {
+    height: calc(100vh - 100px);
   }
 }
 

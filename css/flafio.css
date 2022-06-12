@@ -65,7 +65,7 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 16px;
+  gap: 32px;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -81,6 +81,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 16px;
+  width: 100%;
 }
 
 .gallery-img-small {
@@ -209,6 +210,10 @@ body {
 }
 
 @media screen and (max-width: 540px) {
+  .intro__title {
+    letter-spacing: -3px;
+  }
+
   .gallery__buttons {
     margin-top: 48px;
   }

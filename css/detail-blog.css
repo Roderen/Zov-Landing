@@ -26,6 +26,7 @@ body {
 
 .main {
   position: relative;
+  margin-bottom: 128px;
 }
 
 
@@ -238,6 +239,12 @@ body {
 
   .blog__news-title {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .main {
+    margin-bottom: 80px;
   }
 }
 

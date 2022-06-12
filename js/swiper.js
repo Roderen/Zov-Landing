@@ -75,7 +75,6 @@ $('.slider-container').slick({
     {
       breakpoint: 769,
       settings: {
-      centerMode: true,
       variableWidth: true,
       slidesToShow: 1,
       slidesToScroll: 1

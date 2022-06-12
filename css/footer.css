@@ -389,9 +389,8 @@
     height: auto;
   }
 
-
   .slick-slide {
-    margin-right: 25px;
+    margin-right: 10px;
     outline: none;
 
     width: 300px !important;
@@ -411,7 +410,7 @@
   }
 
   .slick-center {
-    margin-right: 25px;
+    margin-right: 10px;
     width: 300px !important;
     height: 300px;
 
@@ -462,6 +461,10 @@
 
   .footer__policy {
     width: 240px;
+  }
+
+  .footer__policy span {
+    display: none;
   }
 }
 

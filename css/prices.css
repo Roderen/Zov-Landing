@@ -75,6 +75,7 @@ body {
 }
 
 .prices__accordion-title {
+  position: relative;
   width: 384px;
 
   font-family: 'PF Beau Sans Pro Bold';
@@ -122,10 +123,6 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -559,6 +556,45 @@ form:last-child .form__input {
 }
 
 @media screen and (max-width: 540px) {
+  .intro {
+    padding: 22px 0;
+  }
+
+  .prices__accordion-item {
+    padding-top: 55px;
+    padding-bottom: 24px;
+  }
+
+  .section-algorithm {
+    margin-top: 80px;
+  }
+
+  .prices__accordion-list hr {
+    margin: 24px 0;
+  }
+
+  .prices__accordion hr:first-child {
+    display: none;
+  }
+
+  .section-prices {
+    margin-top: 0;
+  }
+
+  .prices {
+    margin-top: 0;
+  }
+
+  .prices__accordion-title:before {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 95%;
+    height: 1px;
+    background-color: #DDE3EA;
+  }
+
   .prices__accordion-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -568,7 +604,7 @@ form:last-child .form__input {
   }
 
   .prices__accordion-title {
-    margin-bottom: 24px;
+    margin-bottom: 50px;
 
     font-size: 36px;
     line-height: 120%;
